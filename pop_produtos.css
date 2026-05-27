@@ -1,0 +1,45 @@
+/* Centraliza o card no meio da nova janela */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* O formato do card estático */
+.card-expandido {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+/* Imagem do produto no pop-up */
+.card-expandido img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Textos do pop-up */
+.card-expandido h1 {
+    color: #d4af37;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-expandido p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 15px;
+    white-space: pre-wrap; /* Faz as quebras de linha (\n) funcionarem visualmente */
+}

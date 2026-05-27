@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="icon" href="img/logo.moreno.ico" type="img/ico">
+        <title>Moreno's Bar</title>
+        <link rel="stylesheet" href="pop_produtos.css">
+    </head>
+    <body>
+        <div class="card-expandido">
+            <h1 id="nome-produto"></h1>
+            <img id="img-produto" src=""/>
+            <p id="desc-produto"></p>
+
+            <script>
+                function capturaDados(dado){
+                    urlParams = new URLSearchParams(window.location.search)
+                    return urlParams.get(dado);
+                }
+
+                //preenche o nome do produto
+                document.getElementById("nome-produto").textContent=capturaDados("produto");
+                //preenche a img do produto
+                document.getElementById("img-produto").src=capturaDados("img");
+                //preenche desc do produto
+                document.getElementById("desc-produto").textContent=capturaDados("desc");
+             </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="contatos.css" rel="stylesheet"/>
+        <link rel="icon" href="img/logo.moreno.ico" type="img/ico">
+        <title>Contato - Moreno's Bar</title>
+    </head>
+    <body>
+
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="img/videofundo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <header>
+            <div class="divheader">
+                <img src="img/logo.moreno.png" class="logo"/>
+                <nav>
+                    <ul>
+                        <li><a href="morenos.html">Home</a></li>
+                        <li><a href="morenos.html#produtos">Cardápio</a></li>
+                        <li><a href="Carta.html">Carta de Vinhos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="contato-container">
+                <h2 class="titulos-container">Fale Conosco</h2>
+                
+                <p class="data">
+                    <script>
+                        data = new Date
+                        diaSemana = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado')
+                        meses = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+
+                        document.write(`${diaSemana[data.getDay()]} - Dia ${data.getDate()} de ${meses[data.getMonth()]} de ${data.getFullYear()}`)
+                    </script>
+                </p>
+
+                <form class="contato" action="#" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Número de Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 33333-3333" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <img src="img/logo.moreno.png" class="logo_footer">
+            <p>
+                Atendimento: 
+                <a href="https://wa.me/5511949787702" target="_blank"> (11) 94978-7702</a> | 
+                <a href="https://instagram.com/mrnbiel" target="_blank"> @mrnbiel</a>
+            </p>
+        </footer>
+
+    </body>
+</html>
